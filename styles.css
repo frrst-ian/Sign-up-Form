@@ -1,0 +1,185 @@
+@font-face {
+  font-family: "norwesterregular";
+  src: url("fonts/norwester-webfont.woff2") format("woff2"),
+    url("fonts/norwester-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  margin: 0px 450px 0px 0px;
+}
+
+div.wrapper-left img {
+  width: 426px;
+  height: 100vh;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 150px;
+  background-color: rgba(0, 0, 0, 0.607);
+  width: 426px;
+  padding: 5px;
+  padding-left: 60px;
+}
+#logo {
+  width: 100px;
+  height: 110px;
+}
+
+.text-logo {
+  position: absolute;
+  top: 172px;
+  left: 170px;
+
+  font-family: "norwesterregular";
+  font-size: 5rem;
+  color: white;
+}
+
+div.wrapper {
+  display: flex;
+  background-color: white;
+}
+
+div.wrapper-right .para {
+  margin: 40px;
+  margin-top: 90px;
+  margin-right: 170px;
+  margin-bottom: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 28px;
+  font-weight: 700px;
+  font-weight: bold;
+}
+
+text {
+  font-weight: bold;
+  margin: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+fieldset {
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid whitesmoke;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+fieldset p {
+  margin-bottom: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.f-wrapper {
+  margin-left: 10px;
+  margin-bottom: -10px;
+  padding-right: 100px;
+}
+.first-row,
+.second-row,
+.third-row {
+  display: flex;
+  margin: 0px 30px 14px 0px;
+}
+.fname {
+  margin-right: 30px;
+}
+.lname {
+  margin-right: 50px;
+}
+.email {
+  margin-right: 30px;
+}
+
+.pwd {
+  margin-right: 30px;
+}
+
+label {
+  padding-left: -5px;
+  font-size: 0.8rem;
+  color: rgb(83, 83, 83);
+}
+
+input {
+  appearance: none;
+}
+
+input {
+  border: 1px solid #70707048;
+  border-radius: 5px;
+  height: 24px;
+  padding: 5px;
+}
+
+input:hover,
+:focus {
+  box-shadow: 1.2px 1.2px 1.2px rgba(65, 65, 65, 0.625);
+  border: 1px solid blue;
+  outline: none;
+}
+
+button {
+  margin: 30px;
+  margin-left: 42px;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px;
+  background-color: rgb(24, 186, 186);
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.login {
+  font-weight: 500px;
+  margin-left: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span#login {
+  color: rgb(24, 186, 186);
+}
+
+input + span {
+  display: flex;
+  position: relative;
+  height: 10px;
+}
+
+input + span::before {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  color: red;
+}
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: "*Password do not match";
+  font-size: 10px;
+}
+
+input:valid + span::after {
+  content: " ";
+}
