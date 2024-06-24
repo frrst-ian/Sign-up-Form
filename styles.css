@@ -38,6 +38,20 @@ div.wrapper-left img {
   height: 110px;
 }
 
+div.copyright-text{
+  position: absolute;
+  bottom: 10px;
+  left: 105px;
+  color: white;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  color: white;
+
+}
+
 .text-logo {
   position: absolute;
   top: 172px;
